@@ -1,0 +1,26 @@
+/* About Page */
+#page-header {
+  background: url("../img/about.jpg");
+  height: 250px;
+  background-size: 1360px;
+  padding-top: 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+#about img {
+  width: 350px;
+  height: 350px; }
+
+#icon-boxes .fa {
+  font-size: 50px;
+  color: #4AF59B; }
+
+#icon-boxes .fa:hover {
+  color: #6500FF !important; }
+
+#icon-boxes .card {
+  background-color: #111527; }
+
+footer {
+  background-color: #111527;
+  border-top: 1px solid #381C6E; }

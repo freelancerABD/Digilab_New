@@ -1,0 +1,234 @@
+body {
+  font-family: SF Pro Display;
+  background: #050711;
+  line-height: none;
+  padding-top: 75px; }
+
+svg {
+  display: block;
+  font: 10.5em 'Montserrat';
+  width: 400px;
+  height: 200px;
+  margin: 0 auto; }
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear; }
+
+.text-copy:nth-child(1) {
+  stroke: #FFFFFF;
+  animation-delay: -1; }
+
+.text-copy:nth-child(2) {
+  stroke: #6500FF;
+  animation-delay: -2s; }
+
+.text-copy:nth-child(3) {
+  stroke: #4AF59B;
+  animation-delay: -3s; }
+
+.text-copy:nth-child(4) {
+  stroke: #121526;
+  animation-delay: -4s; }
+
+.text-copy:nth-child(5) {
+  stroke: #17a2b8;
+  animation-delay: -5s; }
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%; } }
+
+/*=========slider top=========*/
+.carousel-item {
+  height: 400px; }
+
+.carousel-img-1 {
+  background: url("../img/slide1.jpg");
+  background-size: cover; }
+
+.carousel-img-2 {
+  background: url("../img/slide2.jpg");
+  background-size: cover; }
+
+.carousel-img-3 {
+  background: url("../img/slide3.jpg");
+  background-size: cover; }
+
+#home-icon {
+  color: white;
+  background-color: #121526; }
+  #home-icon .fa {
+    font-size: 50px;
+    color: #4AF59B; }
+  #home-icon .fa-gear {
+    animation: spin 10s linear infinite; }
+  #home-icon .fa-cloud {
+    animation: topBounce 3s ease-in-out infinite; }
+  #home-icon .fa-cart-plus {
+    animation: leftBounce 3s ease-in-out infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes topBounce {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(12px); } }
+
+@keyframes leftBounce {
+  0%, 100% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(25px); } }
+
+#home-getstarted {
+  position: relative;
+  background: url("../img/bg1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 250px; }
+  #home-getstarted .dark-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#home-info {
+  color: white; }
+  #home-info .btn {
+    background-color: #6500FF !important;
+    color: white; }
+
+#home-video {
+  position: relative;
+  background: url("../img/people.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 250px; }
+  #home-video .fa {
+    font-size: 50px; }
+  #home-video .dark-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#gallery img {
+  min-height: 250px; }
+
+.testimonial_area {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0px 0 100px 0;
+  background: #050711; }
+  .testimonial_area .carousel-indicators li {
+    width: 20px;
+    height: 1px;
+    background: #4AF59B;
+    border-radius: 50%;
+    padding: 0px; }
+  .testimonial_area .single_testmonial {
+    margin-bottom: 20px; }
+    .testimonial_area .single_testmonial p {
+      color: white;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 32px;
+      margin: 34px 0 10px 0;
+      font-family: "Rubik", sans-serif; }
+    .testimonial_area .single_testmonial .author_thumb {
+      width: 106px;
+      height: 106px;
+      margin: auto;
+      margin: auto auto 15px auto;
+      position: relative; }
+      .testimonial_area .single_testmonial .author_thumb::before {
+        position: absolute;
+        right: -15px;
+        bottom: -12px;
+        width: 50px;
+        height: 50px;
+        content: "\f10d";
+        font-family: FontAwesome;
+        text-align: center;
+        line-height: 50px;
+        background: #4AF59B;
+        color: #000;
+        font-size: 17px; }
+    .testimonial_area .single_testmonial .testmonial_author h3 {
+      color: #7A838B;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0;
+      margin: 0; }
+
+#newsletter {
+  background-color: #121526; }
+  #newsletter input {
+    background-color: #4AF59B;
+    border: #6500FF !important; }
+  #newsletter .btn-submit {
+    background: #6500FF !important;
+    border: 1px solid #4AF59B;
+    color: white; }
+
+footer {
+  background-color: #111527;
+  border-top: 1px solid #381C6E; }
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 51px; }
+  .navbar-nav {
+    display: none; }
+  .carousel h1 {
+    font-size: 3.5rem; } }
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 41px; }
+  .carousel h1 {
+    font-size: 2.5rem; } }
+
+.btndashboard {
+  background-color: #6500FF !important; }
+
+@media (min-width: 375px) {
+  .carousel-item {
+    height: 450px; }
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 300; }
+  #home-getstarted {
+    min-height: 350px; } }
+
+@media (min-width: 576px) {
+  #home-getstarted {
+    min-height: 250px; } }
+
+@media (min-width: 768px) {
+  #home-getstarted {
+    min-height: 250px; } }
+
+@media (min-width: 992px) {
+  .mobile-sidebar {
+    display: none; }
+  #home-getstarted {
+    min-height: 250px; } }

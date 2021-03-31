@@ -1,0 +1,45 @@
+/* contact css*/
+#page-header {
+  background: url("../img/contact1.jpg");
+  height: 250px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 1400px; }
+
+#contact .card {
+  background-color: #111527;
+  color: white; }
+
+#contact .card-body input {
+  background-color: #4AF59B; }
+
+#contact .card-body textarea {
+  background-color: #4AF59B; }
+
+.btn-contact {
+  background-color: #6500FF !important;
+  color: white; }
+
+.btn-contact:hover {
+  color: #4AF59B; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2F2E41;
+  font-size: 18px;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #2F2E41;
+  font-size: 18px; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #2F2E41;
+  font-size: 18px; }
+
+footer {
+  background-color: #111527;
+  border-top: 1px solid #381C6E; }

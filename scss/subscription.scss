@@ -1,0 +1,56 @@
+/*====subscription css====*/
+
+#page-header{
+  position: relative;
+  background: url('../img/slide1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 250px;
+}
+
+#subscription-blog{
+	.card{
+		background: #121526;
+		color: white;
+		.card-header{
+			background: #4AF59B;
+		}
+		.list-group-item{
+			background-color: #121526;
+			border: 1px solid #381C6E;
+		}
+		.card-footer{
+			border-top: 1px solid #4AF59B;
+		}
+		
+	}
+	.btn-1{
+		background-color: #6500FF !important;
+		color: white;
+	}
+	.btn-2{
+		background-color: #6500FF !important;
+		color: white;
+	}
+	.btn-3{
+		background-color: #6500FF !important;
+		color: white;
+	}
+}
+
+#faq{
+	background: #121526;
+	border-top: 1px solid #381C6E;
+	.card-header{
+		background-color: #4AF59B;
+		a{
+			text-decoration: none;
+		}
+	}
+}
+
+footer{
+	background-color: #111527;
+	border-top: 1px solid #381C6E;
+}

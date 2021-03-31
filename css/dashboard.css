@@ -1,0 +1,114 @@
+body {
+  font-family: SF Pro Display;
+  background: #050711;
+  line-height: none;
+  padding-top: 75px; }
+
+.btndashboard {
+  background-color: #6500FF !important; }
+
+.titleboard {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 5px; }
+
+.cardtitle {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.cardbg {
+  background: #121526;
+  border: 1px solid #381C6E; }
+
+.card {
+  height: 22rem; }
+
+.card-body {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.modal.fade:not(.in).right .modal-dialog {
+  -webkit-transform: translate3d(1%, 0, 0);
+  transform: translate3d(1%, 0, 0); }
+
+.modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 500px;
+  height: 100%;
+  right: 0px; }
+  .modal-dialog form {
+    text-align: center; }
+  .modal-dialog .form-control-lg {
+    background: #4AF59B;
+    border: 1px solid #2F2E41;
+    width: 100%; }
+
+.modal-content {
+  height: 100%; }
+
+@media (min-width: 375px) {
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 330px;
+    height: 100%;
+    right: 0px; }
+    .modal-dialog form {
+      text-align: center; }
+    .modal-dialog .form-control-lg {
+      background: #4AF59B;
+      border: 1px solid #2F2E41;
+      width: 100%; }
+  .modal-content {
+    height: 100%; } }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 420px;
+    height: 100%;
+    right: 0px; }
+    .modal-dialog form {
+      text-align: center; }
+    .modal-dialog .form-control-lg {
+      background: #4AF59B;
+      border: 1px solid #2F2E41;
+      width: 100%; }
+  .modal-content {
+    height: 100%; } }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 500px;
+    height: 100%;
+    right: 0px; }
+    .modal-dialog form {
+      text-align: center; }
+    .modal-dialog .form-control-lg {
+      background: #4AF59B;
+      border: 1px solid #2F2E41;
+      width: 100%; }
+  .modal-content {
+    height: 100%; }
+  .res-left-1 {
+    margin-top: 20px; }
+  .res-left-2 {
+    margin-top: 20px; } }
+
+@media (min-width: 992px) {
+  .mobile-sidebar {
+    display: none; }
+  .res-left-1 {
+    margin-top: 0px;
+    padding-left: 0px; }
+  .res-left-2 {
+    margin-top: 0px;
+    padding-left: 0px; }
+  .res-right-1 {
+    padding-left: 0px; }
+  .res-right-2 {
+    padding-left: 0px; } }
