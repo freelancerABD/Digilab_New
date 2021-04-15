@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bot_all_pages.css">
+  <link rel="stylesheet" href="css/automation_bot_all_pages.css">
+
+  <title>Digilab by SoClose</title>
+</head>
+
+<body class="bg">
+<!-- Mobile Menu Sidebar  -->
+<nav class="mobile-sidebar">
+    <input type="checkbox" id="check" >
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <div class="profile">
+            <a href="#" class="profile-pic"> 
+                <img src="img/user.png" width="40" height="40" class="rounded-circle"> 
+                <span class="ml-2 text-white">User Name</span>
+            </a>
+        </div>
+        <ul class="pl-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">Sign Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Desktop Menu Start Here -->
+<nav class="navbar navbar-dark navbar-expand-md" style="border-bottom: none;">
+    <div class="container">
+        <a class="navbar-brand navboxlogo" href="#">
+            <img src="img/iconlogo.svg" alt="logo" class="logo-1">
+            <img src="img/Asset_1.svg" alt="logo" class="logo-2">
+        </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            
+            <div class="profile-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link text-light dropdown-toggle" id="navDropDownLink" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                      <img src="img/user.png" width="40" height="40" class="rounded-circle"> 
+                      <span class="ml-2 text-white">User Name</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navDropDownLink">
+                        <span></span>
+                        <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">Logout</a>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>     
+</div>   
+</nav>
+
+<!-- Services Page -->
+<section id="services" class="text-center" style="padding-top: 30px; padding-bottom: 50px; background: #050711;">
+  <div class="container">
+         <!-- scrapping & automation button -->
+          <div class="sc-au-btn dashed">
+            <div class="sc-1 text-center">
+                <label class="ser-show"><input type="radio" name="radio" value="scrapping" class="inspan d-none">
+                  <span class="scrapping btn mb-0">Scapping Bots</span>
+                </label>
+                <label class="ser-hide"><input type="radio" name="radio" value="automation" class="inspan d-none">
+                  <span class="automation btn mb-0">Automation</span>
+                </label>
+            </div>
+          </div>
+          <!-- first section -->
+          <div class="row mt-5" id="first-section-target">
+            <div class="col-md-6 col-lg-3 res-right-1">
+              <div class="card bg-card inner-shadow">
+                <div class="card-body text-white">
+                  <img class="cardlogo py-2" src="img/logo-google.svg">
+                      <h5 class="cardtitle">Google Scrapping</h5>
+                      <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                      <button type="submit" class="btn btn-dashboard rounded-pill font-weight-bold text-white" data-toggle="modal" data-target="#botModal">Use this BOT</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 res-right-2">
+              <div class="card bg-card inner-shadow">
+                <div class="card-body text-white">
+                  <img class="cardlogo py-2" src="img/logo-linkedin.svg">
+                      <h5 class="cardtitle">Linkedin profile scrapper</h5>
+                      <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                      <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="bot-linkedin.html">Use this BOT</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 res-left-1">
+              <div class="card bg-card inner-shadow">
+                <div class="card-body text-white">
+                  <img class="cardlogo py-2" src="img/logo-facebook.svg">
+                      <h5 class="cardtitle">Facebook Follow</h5>
+                      <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                      <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="bot-facebook.html">Use this BOT</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 res-left-2">
+              <div class="card bg-card inner-shadow">
+                <div class="card-body text-white">
+                  <img class="cardlogo py-2" src="img/logo-instagram.svg">
+                      <h5 class="cardtitle">Instagram</h5>
+                      <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                      <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="bot-instagram.html">Use this BOT</a></button>
+                </div>
+              </div>
+            </div>
+            <!-- second row-->
+            <div class="row mt-3 mx-0">
+              <div class="col-md-6 col-lg-3 res-right-1">
+                  <div class="card bg-card inner-shadow">
+                    <div class="card-body text-white">
+                      <img class="cardlogo py-2" src="img/logo-google.svg">
+                          <h5 class="cardtitle">Google Scrapping</h5>
+                          <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                          <button type="submit" class="btn btn-dashboard rounded-pill font-weight-bold text-white" data-toggle="modal" data-target="#botModal">Use this BOT</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 res-right-2">
+                  <div class="card bg-card inner-shadow">
+                    <div class="card-body text-white">
+                      <img class="cardlogo py-2" src="img/logo-linkedin.svg">
+                          <h5 class="cardtitle">Linkedin profile scrapper</h5>
+                          <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                          <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="bot-linkedin.html">Use this BOT</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 res-left-1">
+                  <div class="card bg-card inner-shadow">
+                    <div class="card-body text-white">
+                      <img class="cardlogo py-2" src="img/logo-facebook.svg">
+                          <h5 class="cardtitle">Facebook Follow</h5>
+                          <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                          <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="bot-facebook.html">Use this BOT</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 res-left-2">
+                  <div class="card bg-card inner-shadow">
+                    <div class="card-body text-white">
+                      <img class="cardlogo py-2" src="img/logo-instagram.svg">
+                          <h5 class="cardtitle">Instagram</h5>
+                          <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                          <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="bot-instagram.html">Use this BOT</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- second section automation-->
+            <div class="row mt-5" id="first-section-target2">
+              <div class="col-md-6 col-lg-3 res-right-1">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-google.svg">
+                        <h5 class="cardtitle">Google Scrapping</h5>
+                        <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                        <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 res-right-2">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-linkedin.svg">
+                        <h5 class="cardtitle">Linkedin profile scrapper</h5>
+                        <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                        <button id="link-automation" class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 res-left-1">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-facebook.svg">
+                        <h5 class="cardtitle">Facebook Follow</h5>
+                        <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                        <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 res-left-2">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-instagram.svg">
+                        <h5 class="cardtitle">Instagram</h5>
+                        <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                        <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <!-- second row-->
+              <div class="row mt-3 mx-0">
+                <div class="col-md-6 col-lg-3 res-right-1">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-google.svg">
+                            <h5 class="cardtitle">Google Scrapping</h5>
+                            <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                            <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 res-right-2">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-linkedin.svg">
+                            <h5 class="cardtitle">Linkedin profile scrapper</h5>
+                            <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                            <button id="link-automation" class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 res-left-1">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-facebook.svg">
+                            <h5 class="cardtitle">Facebook Follow</h5>
+                            <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                            <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 res-left-2">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-instagram.svg">
+                            <h5 class="cardtitle">Instagram</h5>
+                            <p class="card-text text-left px-4">The most-popular Instagram autonomation: Auto follow and auto unfollow on instagram like a pro</p>
+                            <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+</section>
+
+<div id="all-body-linkedin">
+<section class="section-top py-5">
+    <div class="container">
+      <div id="left-arrow" style="cursor: pointer;">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-arrow-left fa-stack-1x fa-inverse text-dark"></i>
+        </span>
+      </div>
+      <h2 class="pt-3 text-center top-text"><span style="color:#4AF59B;">Linkedin</span> Automation</h2>
+      <hr style="border: 1px solid #6500FF; width: 70px;" />
+      <div class="row pt-5">
+        <div class="col-md-4">
+          <div class="card card-1">
+            <div class="card-header">
+              <!-- second section -->
+              <div class="button__box dashed">
+                <div class="sc-1 row">
+                  <div class="col-lg-6 pr-0">
+                    <label class="show"><input type="radio" name="radio" value="Steps" class="inspan d-none">
+                      <span class="steps btn">Steps</span>
+                    </label>
+                  </div>
+                  <div class="col-lg-6 px-0">
+                    <label class="hide"><input type="radio" name="radio" value="Console" class="inspan click d-none">
+                      <span class="console btn btn-block">Console</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            <!-- second section -->
+            </div>
+            <div class="card-body pt-0">
+              <ul class="all-step pl-3" id="target1">
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+              </ul>
+              <ul class="all-step console pl-3" id="target2">
+                <h2>Activate Debugging</h2>
+                <p>F12 on your keybord will activate debugging.</p>
+                <p>Then select "Console" in the debugger menu.</p>
+                <p>Then click Run again.</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card inner-shadow">
+            <div class="card-body pt-5">
+              <div class="form-group">
+                <label for="url">LINE URL</label>
+                <input type="url" name="url" class="form-control" />
+              </div>
+              <div class="form-group pt-2">
+                <label for="keywords">KEYWORDS</label>
+                <input type="text" name="keywords" class="form-control" />
+              </div>
+              <div class="form-group result pt-2">
+                <label for="number-result">NUMBER OF RESULTS</label><br>
+                <input type="text" name="number-result" class="form-control number-result" />
+                <i class="fa fa-caret-down" style=""></i>
+              </div>
+              <div class="form-group pt-4" id="downDoc" style="display: none;">
+                <i class="fa fa-file-o"></i>
+                <span class="ml-2">Result 1</span>
+                <a href="#">Download</a>
+              </div>   
+            </div>
+            <div class="card-footer text-center inner-shadow">
+              <i class="fa fa-circle"></i>
+              <i class="fa fa-play" onclick="myFunction()"></i>
+              <i class="fa fa-pause"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Icon Boxes Bot-->
+  <section id="icon-boxes-bot" class="py-5 text-center text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Other Services</h2>
+        </div>
+        <div class="col-md-6" style="padding-right: 0px;">
+          <input type="text" placeholder="Search" class="form-control btn-block"/>
+        </div>
+      </div>
+        <!-- section -->
+            <div class="row mt-5">
+              <div class="col-md-6 col-lg-3 res-right-1">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-google.svg">
+                        <h5 class="cardtitle">Google Scrapping</h5>
+                        <p class="card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                        <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 res-right-2">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white" style="padding-left: 16px;padding-right: 16px;">
+                    <img class="cardlogo py-2" src="img/logo-linkedin.svg">
+                        <h5 class="cardtitle-1">Linkedin profile scrapper</h5>
+                        <p class="card-text res-card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                        <button id="link-automation" class="btn btn-dashboard-1 rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 res-left-1">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-facebook.svg">
+                        <h5 class="cardtitle">Facebook Follow</h5>
+                        <p class="card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                        <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 res-left-2">
+                <div class="card bg-card inner-shadow">
+                  <div class="card-body text-white">
+                    <img class="cardlogo py-2" src="img/logo-instagram.svg">
+                        <h5 class="cardtitle">Instagram</h5>
+                        <p class="card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                        <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Automation</a></button>
+                  </div>
+                </div>
+              </div>
+              <!-- second row-->
+              <div class="row mt-3 mx-0">
+                <div class="col-md-6 col-lg-3 res-right-1">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-google.svg">
+                            <h5 class="cardtitle">Google Scrapping</h5>
+                            <p class="card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                            <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Bot</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 res-right-2">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white" style="padding-left: 16px;padding-right: 16px;">
+                        <img class="cardlogo py-2" src="img/logo-linkedin.svg">
+                            <h5 class="cardtitle-1">Linkedin profile scrapper</h5>
+                            <p class="card-text res-card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                            <button class="btn btn-dashboard-1 rounded-pill font-weight-bold text-white"><a href="#">Use this Bot</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 res-left-1">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-facebook.svg">
+                            <h5 class="cardtitle">Facebook Follow</h5>
+                            <p class="card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                            <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Bot</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 res-left-2">
+                    <div class="card bg-card inner-shadow">
+                      <div class="card-body text-white">
+                        <img class="cardlogo py-2" src="img/logo-instagram.svg">
+                            <h5 class="cardtitle">Instagram</h5>
+                            <p class="card-text text-left px-3">The most-popular Instagram autonomation: Auto follow and auto a pro</p>
+                            <button class="btn btn-dashboard rounded-pill font-weight-bold text-white"><a href="#">Use this Bot</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+</section>
+</div>
+
+<!-- BOT_Modal Start -->
+<div class="modal right fade" id="botModal" tabindex="-1" role="dialog" aria-labelledby="botModal">
+    <div class="container">
+        <div class="modal-dialog text-center" role="document">
+            <div class="modal-content" style="background-color: #1F2441;">
+                <div class="text-center pt-5 mb-3">
+                    <button class="close text-light pr-4" data-dismiss="modal" style="font-size: 40px;"><span aria-hidden="true">&times;</span></button>
+                    <img src="img/logo-google.svg" alt="generate" />
+                </div>
+                <h3 class="text-light" style="font-weight: bold;">Google Scrapping</h3>
+                <p class="lead text-white">Fill the missing info to generate your BOT</p>
+                <div class="modal-body text-light">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="email" class="form-control-lg rounded-pill" name="input 1" placeholder=" Input 1" style=" width: 100%;">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" id="pass" class="form-control-lg rounded-pill" name="input 2" placeholder=" Input 2" style=" width: 100%;">
+                        </div>
+                        <div class="d-flex flex-row">
+                        <div class="option pb-4" style="margin-left: 44px;">
+                        <div class="check-box">
+                            <input type="checkbox" name="option-1" id="option-1">
+                            <label for="option-1" class="pl-3">Option 1</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" name="option-2" id="option-2">
+                            <label for="option-2" class="pl-3">Option 2</label>
+                        </div>
+                        </div>
+                        <div class="option pb-4" style="margin-left: 44px;">
+                        <div class="check-box">
+                            <input type="checkbox" name="option-3" id="option-3">
+                            <label for="option-3" class="pl-3">Option 3</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" name="option-4" id="option-4">
+                            <label for="option-4" class="pl-3">Option 4</label>
+                        </div>
+                        </div>
+                    </div>
+                    </form>
+                    <footer class="generate text-center py-4">
+                        <a href="#genClose" class="text-white" style="font-size: 30px; padding-top: 30px;text-decoration: none; font-weight: bold;" data-toggle="modal" data-target="#" onclick="document.getElementById('#genModal').style.display='none'"><img src="img/generate.png" alt="generate" style="border-radius: 100px; background: #6500FF; padding: 5px; margin-right: 10px;">Generate
+                        </a>  
+                    </footer>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- BTO_Modal End -->
+
+<!-- Generate_Modal Start -->
+<div class="modal right fade" id="genClose" tabindex="-1" role="dialog" aria-labelledby="genModal">
+    <div class="container">
+        <div class="modal-dialog text-center" role="document">
+            <div class="modal-content" style="background-color: #1F2441;">
+                <div class="text-center pt-5 mb-3">
+                    <button class="close text-light pr-4" data-dismiss="modal" style="font-size: 40px;">&times;</button>
+                    <img src="img/logo-google.svg" alt="generate" />
+                </div>
+                <h3 class="text-light" style="font-weight: bold;">Google Scrapping</h3>
+                <p class="lead text-white">Fill the missing info to generate your BOT</p>
+                <div class="modal-body text-light">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="email" class="form-control-lg rounded-pill" name="input 1" placeholder=" Input 1" style=" width: 100%;">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" id="pass" class="form-control-lg rounded-pill" name="input 2" placeholder=" Input 2" style=" width: 100%;">
+                        </div>
+                        <div class="d-flex flex-row">
+                        <div class="option pb-4" style="margin-left: 44px;">
+                        <div class="check-box">
+                            <input type="checkbox" name="option-1" id="option-1">
+                            <label for="option-1" class="pl-3">Option 1</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" name="option-2" id="option-2">
+                            <label for="option-2" class="pl-3">Option 2</label>
+                        </div>
+                        </div>
+                        <div class="option pb-4" style="margin-left: 44px;">
+                        <div class="check-box">
+                            <input type="checkbox" name="option-3" id="option-3">
+                            <label for="option-3" class="pl-3">Option 3</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" name="option-4" id="option-4">
+                            <label for="option-4" class="pl-3">Option 4</label>
+                        </div>
+                        </div>
+                        </div>
+                    </form>
+                    <footer class="generate text-center py-2">
+                        <a class="text-white" style="font-size: 30px; padding-top: 30px;text-decoration: none; font-weight: bold;" data-toggle="modal" data-target="#"><img src="img/generate.png" alt="generate" style="border-radius: 100px; background: #6500FF; padding: 5px; margin-right: 10px;">Generate
+                        </a> <br>
+                        <button type="submit" class="btn btndashboard rounded-pill text-white form-control-lg my-5" style="width: 300px; background: #6500FF;">Download your file</button>
+                    </footer>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- Generate_Modal End --> 
+
+<!-- All js script -->
+<script>
+function myFunction() {
+  document.getElementById("downDoc").style.display = "block";
+}
+</script>
+
+<script type="text/javascript">
+    $('#myModal').on('hidden.bs.modal', function () {
+  // Load up a new modal...
+  $('#myModalNew').modal('show')
+});
+</script>
+
+<script>
+console.log(5 + 6);
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#first-section-target2").hide();
+        $(".ser-show").on("click",function(){
+            $("#first-section-target").show();
+            $("#first-section-target2").hide();
+        });
+        $(".ser-hide").on("click",function(){
+            $("#first-section-target2").show();
+            $("#first-section-target").hide();
+        });
+
+    });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#target2").hide();
+    $(".show").on("click",function(){
+        $("#target1").show();
+        $("#target2").hide();
+    });
+    $(".hide").on("click",function(){
+        $("#target2").show();
+        $("#target1").hide();
+    });
+
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#all-body-linkedin").hide();
+        $("#link-automation").on("click",function(){
+            $("#all-body-linkedin").show();
+            $("#services").hide();
+        });
+        $("#left-arrow").on("click",function(){
+            $("#services").show();
+            $("#all-body-linkedin").hide();
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
