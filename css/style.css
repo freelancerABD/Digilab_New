@@ -1,344 +1,286 @@
 body {
   font-family: SF Pro Display;
   background: #050711;
-  line-height: none; }
+  padding-top: 0px; }
+
+/*=========workes box=========*/
+#workes-box {
+  background-color: #121526; }
+  #workes-box .titleboard {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 5px; }
+  #workes-box .card-title {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    font-weight: bold; }
+  #workes-box .card-bg-1 {
+    background: #121526; }
+  #workes-box .card {
+    height: 20rem; }
+    #workes-box .card p {
+      color: #ddd; }
+  #workes-box .card-body {
+    padding-left: 5px;
+    padding-right: 5px; }
+  #workes-box .btn-dashboard {
+    background-color: #6500FF !important;
+    margin-top: 30px;
+    width: 80%; }
+    #workes-box .btn-dashboard a {
+      text-decoration: none;
+      color: white; }
+
+/*======Services=======*/
+#services {
+  background-color: #121526; }
+
+/*--------all of start--------*/
+.btn-dashboard {
+  background-color: #6500FF !important;
+  margin-top: 15px; }
+  .btn-dashboard a {
+    text-decoration: none;
+    color: white; }
+
+.titleboard {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 5px; }
+
+.cardtitle {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold; }
+
+.bg-card {
+  background: #121526; }
+
+.card {
+  height: 22rem; }
+  .card p {
+    color: #ddd; }
+
+.card-body {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.modal.fade:not(.in).right .modal-dialog {
+  -webkit-transform: translate3d(1%, 0, 0);
+  transform: translate3d(1%, 0, 0); }
+
+.modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 500px;
+  height: 100%;
+  right: 0px; }
+  .modal-dialog form {
+    text-align: center; }
+  .modal-dialog .form-control-lg {
+    background: #4AF59B;
+    border: 1px solid #2F2E41;
+    width: 100%; }
+
+.modal-content {
+  height: 100%; }
+
+/*=====scrapping & automation Button=====*/
+.sc-au-btn h3 {
+  font-size: 1.25rem; }
+
+.sc-au-btn span {
+  font-size: 0.875rem;
+  color: #999999; }
+
+.sc-au-btn .sc-1 {
+  margin-top: 35px;
+  margin-left: -15px;
+  margin-bottom: 25px; }
+  .sc-au-btn .sc-1 .scrapping {
+    padding: 10px 30px;
+    margin-right: 0px; }
+  .sc-au-btn .sc-1 .automation {
+    padding: 10px 30px; }
+  .sc-au-btn .sc-1 span {
+    border: 2px solid #381C6E;
+    border-radius: 8px;
+    margin: 0px 15px 5px 0px;
+    transition: all 0.2s ease-out 0s;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; }
+  .sc-au-btn .sc-1 a {
+    text-decoration: none;
+    color: #999999; }
+  .sc-au-btn .sc-1 .inspan:checked + span {
+    border-color: #4AF59B;
+    color: black;
+    background: #4AF59B none repeat scroll 0% 0%; }
+
+/*--------all of end--------*/
+/*=========slider top=========*/
+.carousel-item {
+  height: 400px; }
+
+.carousel-img-1 {
+  background: url("../img/slide5.jpeg");
+  background-size: cover; }
+
+.carousel-img-2 {
+  background: url("../img/slide2.jpg");
+  background-size: cover; }
+
+.carousel-img-3 {
+  background: url("../img/slide3.jpg");
+  background-size: cover; }
+
+/*=====testimonial area=====*/
+.testimonial_area {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0px 0 100px 0;
+  background: #050711; }
+  .testimonial_area .carousel-indicators li {
+    width: 20px;
+    height: 1px;
+    background: #4AF59B;
+    border-radius: 50%;
+    padding: 0px; }
+  .testimonial_area .single_testmonial {
+    margin-bottom: 20px; }
+    .testimonial_area .single_testmonial p {
+      color: white;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 32px;
+      margin: 34px 0 10px 0;
+      font-family: "Rubik", sans-serif; }
+    .testimonial_area .single_testmonial .author_thumb {
+      width: 106px;
+      height: 106px;
+      margin: auto;
+      margin: auto auto 15px auto;
+      position: relative; }
+      .testimonial_area .single_testmonial .author_thumb::before {
+        position: absolute;
+        right: -15px;
+        bottom: -12px;
+        width: 50px;
+        height: 50px;
+        content: "\f10d";
+        font-family: FontAwesome;
+        text-align: center;
+        line-height: 50px;
+        background: #4AF59B;
+        color: #000;
+        font-size: 17px; }
+    .testimonial_area .single_testmonial .testmonial_author h3 {
+      color: #7A838B;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0;
+      margin: 0; }
+
+#newsletter {
+  background-color: #121526; }
+  #newsletter input {
+    background-color: #4AF59B;
+    border: #6500FF !important; }
+  #newsletter .btn-submit {
+    background: #6500FF !important;
+    border: 1px solid #4AF59B;
+    color: white; }
+
+#copyright {
+  background-color: #111527;
+  border-top: 1px solid #381C6E; }
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: none; }
+  .carousel h1 {
+    font-size: 3.5rem; } }
+
+@media (max-width: 767px) {
+  .carousel h1 {
+    font-size: 2.5rem; } }
+
+.btndashboard {
+  background-color: #6500FF !important; }
 
 @media (min-width: 375px) {
-  #logIn {
-    background: url("../img/Polygon-1.svg") no-repeat;
-    background: cover;
-    background-size: 500px; }
-    #logIn .logo {
-      margin-top: 50px;
-      margin-left: 50px;
-      width: 100px;
-      height: 100px; }
-    #logIn .icon-text {
-      font-size: 22px;
-      margin-top: 60px;
-      color: #FFFFFF;
-      font-weight: none; }
-    #logIn b {
-      color: #4AF59B; }
-    #logIn .login-layout {
-      margin-top: 50px; }
-      #logIn .login-layout h3 {
-        font-size: 30px;
-        color: #FFFFFF;
-        letter-spacing: 0px;
-        font-weight: bold; }
-      #logIn .login-layout p {
-        font-size: 18px;
-        color: #FFFFFF;
-        letter-spacing: 0px; }
-      #logIn .login-layout .forget-pass a {
-        font-size: 15px;
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .form-control {
-        border: 1px solid #2F2E41;
-        background-color: #4AF59B;
-        height: 40px;
-        padding-bottom: 5px; }
-      #logIn .login-layout .btnconnexion {
-        background-color: #6500FF !important;
-        color: white !important;
-        width: 300px;
-        font-size: 17px;
-        opacity: 1;
-        font-weight: bold; }
-      #logIn .login-layout .account a {
-        font-size: 18px;
-        color: #4AF59B;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .account {
-        font-size: 18px;
-        color: #FFFFFF;
-        font-weight: bold; }
-    #logIn ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #2F2E41;
-      font-size: 18px;
-      opacity: 1;
-      /* Firefox */ }
-    #logIn :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #2F2E41;
-      font-size: 18px; }
-    #logIn ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #2F2E41;
-      font-size: 18px; } }
+  .carousel-item {
+    height: 450px; }
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 300; }
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 330px;
+    height: 100%;
+    right: 0px; }
+    .modal-dialog form {
+      text-align: center; }
+    .modal-dialog .form-control-lg {
+      background: #4AF59B;
+      border: 1px solid #2F2E41;
+      width: 100%; }
+  .modal-content {
+    height: 100%; } }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  #logIn {
-    background: url("../img/Polygon-1.svg") no-repeat;
-    background: cover;
-    background-size: 500px; }
-    #logIn .logo {
-      margin-top: 50px;
-      margin-left: 150px;
-      width: 100px;
-      height: 100px; }
-    #logIn .icon-text {
-      font-size: 22px;
-      margin-top: 60px;
-      color: #FFFFFF;
-      font-weight: none; }
-    #logIn b {
-      color: #4AF59B; }
-    #logIn .login-layout {
-      margin-top: 50px; }
-      #logIn .login-layout h3 {
-        font-size: 30px;
-        color: #FFFFFF;
-        letter-spacing: 0px;
-        font-weight: bold; }
-      #logIn .login-layout p {
-        font-size: 18px;
-        color: #FFFFFF;
-        letter-spacing: 0px; }
-      #logIn .login-layout .forget-pass a {
-        font-size: 15px;
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .form-control {
-        border: 1px solid #2F2E41;
-        background-color: #4AF59B;
-        height: 40px;
-        padding-bottom: 5px; }
-      #logIn .login-layout .btnconnexion {
-        background-color: #6500FF !important;
-        color: white !important;
-        width: 300px;
-        font-size: 17px;
-        opacity: 1;
-        font-weight: bold; }
-      #logIn .login-layout .account a {
-        font-size: 18px;
-        color: #4AF59B;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .account {
-        font-size: 18px;
-        color: #FFFFFF;
-        font-weight: bold; }
-    #logIn ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #2F2E41;
-      font-size: 18px;
-      opacity: 1;
-      /* Firefox */ }
-    #logIn :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #2F2E41;
-      font-size: 18px; }
-    #logIn ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #2F2E41;
-      font-size: 18px; } }
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 420px;
+    height: 100%;
+    right: 0px; }
+    .modal-dialog form {
+      text-align: center; }
+    .modal-dialog .form-control-lg {
+      background: #4AF59B;
+      border: 1px solid #2F2E41;
+      width: 100%; }
+  .modal-content {
+    height: 100%; } }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #logIn {
-    background: url("../img/Polygon-1.svg") no-repeat;
-    background: cover;
-    background-size: 420px;
-    padding-bottom: 50px; }
-    #logIn .logo {
-      margin-top: 35px;
-      margin-left: 0px;
-      width: 110px;
-      height: 110px; }
-    #logIn .icon-text {
-      font-size: 25px;
-      margin-top: 40px;
-      color: #FFFFFF;
-      font-weight: none; }
-    #logIn b {
-      color: #4AF59B; }
-    #logIn .login-layout {
-      margin-top: 70px; }
-      #logIn .login-layout h3 {
-        font-size: 25px;
-        color: #FFFFFF;
-        letter-spacing: 0px;
-        font-weight: bold; }
-      #logIn .login-layout p {
-        font-size: 18px;
-        color: #FFFFFF;
-        letter-spacing: 0px; }
-      #logIn .login-layout .forget-pass a {
-        font-size: 15px;
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .form-control {
-        border: 1px solid #2F2E41;
-        background-color: #4AF59B;
-        height: 40px; }
-      #logIn .login-layout .btnconnexion {
-        background-color: #6500FF !important;
-        color: white !important;
-        width: 200px;
-        font-size: 15px;
-        opacity: 1;
-        font-weight: bold; }
-      #logIn .login-layout .account a {
-        font-size: 15px;
-        color: #4AF59B;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .account {
-        font-size: 15px;
-        color: #FFFFFF;
-        font-weight: bold; }
-    #logIn ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #2F2E41;
-      opacity: 1;
-      /* Firefox */ }
-    #logIn :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #2F2E41; }
-    #logIn ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #2F2E41; } }
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 500px;
+    height: 100%;
+    right: 0px; }
+    .modal-dialog form {
+      text-align: center; }
+    .modal-dialog .form-control-lg {
+      background: #4AF59B;
+      border: 1px solid #2F2E41;
+      width: 100%; }
+  .modal-content {
+    height: 100%; }
+  .res-left-1 {
+    margin-top: 20px; }
+  .res-left-2 {
+    margin-top: 20px; } }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #logIn {
-    background: url("../img/Polygon-1.svg") no-repeat;
-    background: cover;
-    background-size: 540px;
-    padding-bottom: 90px;
-    margin-top: 0px; }
-    #logIn .logo {
-      margin-top: 50px;
-      margin-left: 20px;
-      width: 150px;
-      height: 150px; }
-    #logIn .icon-text {
-      font-size: 30px;
-      margin-top: 60px;
-      color: #FFFFFF;
-      font-weight: none; }
-    #logIn b {
-      color: #4AF59B; }
-    #logIn .login-layout {
-      margin-top: 100px; }
-      #logIn .login-layout h3 {
-        font-size: 45px;
-        color: #FFFFFF;
-        letter-spacing: 0px;
-        font-weight: bold; }
-      #logIn .login-layout p {
-        font-size: 26px;
-        color: #FFFFFF;
-        letter-spacing: 0px; }
-      #logIn .login-layout .forget-pass a {
-        font-size: 20px;
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .form-control {
-        border: 1px solid #2F2E41;
-        background-color: #4AF59B; }
-      #logIn .login-layout .btnconnexion {
-        background-color: #6500FF !important;
-        color: white !important;
-        width: 250px;
-        font-size: 20px;
-        opacity: 1;
-        font-weight: bold; }
-      #logIn .login-layout .account a {
-        font-size: 18px;
-        color: #4AF59B;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .account {
-        font-size: 18px;
-        color: #FFFFFF;
-        font-weight: bold; }
-    #logIn ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #2F2E41;
-      opacity: 1;
-      /* Firefox */ }
-    #logIn :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #2F2E41; }
-    #logIn ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #2F2E41; } }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #logIn {
-    background: url("../img/Polygon-1.svg") no-repeat;
-    background: cover;
-    background-size: 700px;
-    padding-bottom: 220px;
-    margin-top: 0px; }
-    #logIn .logo {
-      margin-top: 190px; }
-    #logIn .icon-text {
-      font-size: 50px;
-      margin-top: 200px;
-      color: #FFFFFF;
-      font-weight: none; }
-    #logIn b {
-      color: #4AF59B; }
-    #logIn .login-layout {
-      margin-top: 80px; }
-      #logIn .login-layout h3 {
-        font-size: 55px;
-        color: #FFFFFF;
-        letter-spacing: 0px;
-        font-weight: bold; }
-      #logIn .login-layout p {
-        font-size: 28px;
-        color: #FFFFFF;
-        letter-spacing: 0px; }
-      #logIn .login-layout .forget-pass a {
-        font-size: 20px;
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .form-control {
-        border: 1px solid #2F2E41;
-        background-color: #4AF59B;
-        height: 53px; }
-      #logIn .login-layout .btnconnexion {
-        background-color: #6500FF !important;
-        color: white !important;
-        width: 350px;
-        font-size: 22px;
-        opacity: 1;
-        margin-bottom: 10px;
-        margin-top: 25px;
-        font-weight: bold; }
-      #logIn .login-layout .account a {
-        font-size: 20px;
-        color: #4AF59B;
-        text-decoration: none;
-        font-weight: bold; }
-      #logIn .login-layout .account {
-        font-size: 20px;
-        color: #FFFFFF;
-        font-weight: bold; }
-    #logIn ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #2F2E41;
-      opacity: 1;
-      /* Firefox */ }
-    #logIn :-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #2F2E41; }
-    #logIn ::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: #2F2E41; } }
+  .mobile-sidebar {
+    display: none; }
+  .mobile-sidebar {
+    display: none; }
+  .res-left-1 {
+    margin-top: 0px;
+    padding-left: 0px; }
+  .res-left-2 {
+    margin-top: 0px;
+    padding-left: 0px; }
+  .res-right-1 {
+    padding-left: 0px; }
+  .res-right-2 {
+    padding-left: 0px; } }

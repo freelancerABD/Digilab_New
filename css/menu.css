@@ -1,12 +1,11 @@
 body {
   font-family: SF Pro Display;
   background: #050711;
-  line-height: none;
-  padding-top: 75px; }
+  padding-top: 0px; }
 
 /* define custom css variables */
 :root {
-  --inner-shadow: inset 3px 3px 3px #381C6E, inset -3px -3px 3px #381C6E;
+  --inner-shadow: inset 2px 2px 2px #381C6E, inset -2px -2px 2px #381C6E;
   --inner-shadow-0: inset 1px 1px 1px #4AF59B, inset -1px -1px 1px #4AF59B; }
 
 .inner-shadow {
@@ -16,90 +15,92 @@ body {
   box-shadow: var(--inner-shadow-0); }
 
 /*======Mobile Sidebar Menu Css======*/
-.mobile-sidebar a {
-  text-decoration: none; }
-
-.mobile-sidebar #check {
-  display: none; }
-
-.mobile-sidebar label #btn, .mobile-sidebar label #cancel {
-  position: absolute;
-  cursor: pointer; }
-
-.mobile-sidebar label #btn {
-  left: 30px;
-  top: 25px;
-  font-size: 20px;
-  color: white;
-  z-index: 1111;
-  position: fixed; }
-
-.mobile-sidebar label #cancel {
-  left: -265px;
-  top: 25px;
-  font-size: 20px;
-  color: white;
-  z-index: 11111;
-  position: fixed;
-  transition: all .5s ease; }
-
-.mobile-sidebar #check:checked ~ .sidebar {
-  left: 0; }
-
-.mobile-sidebar #check:checked ~ label #btn {
-  left: 300px;
-  opacity: 0;
-  pointer-events: none; }
-
-.mobile-sidebar #check:checked ~ label #cancel {
-  left: 265px; }
-
-.mobile-sidebar .sidebar {
-  position: fixed;
-  left: -300px;
-  width: 300px;
-  height: 100%;
-  background: #111527;
-  top: 0;
-  z-index: 9999;
-  transition: all .5s ease; }
-  .mobile-sidebar .sidebar .profile {
-    line-height: 65px;
-    background: #050711;
-    padding-left: 40px; }
-  .mobile-sidebar .sidebar ul a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 18px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
+.mobile-sidebar {
+  margin-top: -25px; }
+  .mobile-sidebar a {
     text-decoration: none; }
-  .mobile-sidebar .sidebar ul li {
-    list-style: none;
-    border-top: 1px solid #381C6E; }
+  .mobile-sidebar #check {
+    display: none; }
+  .mobile-sidebar label #btn, .mobile-sidebar label #cancel {
+    position: absolute;
+    cursor: pointer; }
+  .mobile-sidebar label #btn {
+    left: 30px;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+    z-index: 1111; }
+  .mobile-sidebar label #cancel {
+    left: -265px;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+    z-index: 11111;
+    transition: all .5s ease; }
+  .mobile-sidebar #check:checked ~ .sidebar {
+    left: 0; }
+  .mobile-sidebar #check:checked ~ label #btn {
+    left: 300px;
+    opacity: 0;
+    pointer-events: none; }
+  .mobile-sidebar #check:checked ~ label #cancel {
+    left: 265px; }
+  .mobile-sidebar .sidebar {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: #111527;
+    top: 0;
+    z-index: 9999;
+    transition: all .5s ease; }
+    .mobile-sidebar .sidebar .profile {
+      line-height: 65px;
+      background: #050711;
+      padding-left: 40px; }
+    .mobile-sidebar .sidebar ul a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 65px;
+      font-size: 18px;
+      color: white;
+      padding-left: 40px;
+      box-sizing: border-box;
+      text-decoration: none; }
+    .mobile-sidebar .sidebar ul li {
+      list-style: none;
+      border-top: 1px solid #381C6E; }
 
 /*======Desktop Navbar Css======*/
 .navbar {
   background-color: #111527; }
   .navbar .navbar-brand .logo-1 {
-    width: 50px; }
+    width: 40px; }
   .navbar .navbar-brand .logo-2 {
-    width: 100px; }
+    width: 90px; }
   .navbar .navbar-nav {
-    margin-left: 30px; }
+    margin-left: 65px; }
+    .navbar .navbar-nav .nav-item {
+      padding: 0px 15px; }
     .navbar .navbar-nav .nav-link {
       color: #fff;
       text-transform: uppercase;
       font-size: 15px; }
     .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
       color: #4AF59B; }
+    .navbar .navbar-nav .nav-item:hover, .navbar .navbar-nav .nav-item:focus {
+      border-bottom: 2px solid #6500FF;
+      margin-bottom: -14px; }
   .navbar .profile-menu {
     position: absolute;
     right: 80px;
-    top: 15px; }
+    top: 5px; }
+    .navbar .profile-menu .nav-item:hover, .navbar .profile-menu .nav-item:focus {
+      border-bottom: 0px;
+      margin-bottom: 0px; }
+  .navbar .dropdown-menu {
+    left: 20px; }
   .navbar .dropdown-menu span {
     position: absolute;
     content: '';
@@ -109,7 +110,7 @@ body {
     z-index: -1;
     transform: rotate(45deg);
     top: -8px;
-    left: 17px; }
+    left: 13px; }
 
 #page-header {
   background: url("../img/image2.jpeg");
@@ -122,14 +123,16 @@ body {
   color: #4AF59B; }
 
 @media (max-width: 991px) {
-  body {
-    padding-top: 51px; }
   .navbar-nav {
     display: none; } }
 
-@media (max-width: 767px) {
-  body {
-    padding-top: 41px; } }
+@media (min-width: 360px) {
+  .navbar .navbar-brand {
+    margin-left: 110px; }
+    .navbar .navbar-brand .logo-1 {
+      width: 40px; }
+    .navbar .navbar-brand .logo-2 {
+      width: 80px; } }
 
 @media (min-width: 375px) {
   .navbar .navbar-brand {
@@ -141,7 +144,7 @@ body {
 
 @media (min-width: 576px) {
   .navbar .navbar-brand {
-    margin-left: 190px; }
+    margin-left: 220px; }
     .navbar .navbar-brand .logo-1 {
       width: 40px; }
     .navbar .navbar-brand .logo-2 {
@@ -151,38 +154,38 @@ body {
   .navbar .navbar-brand {
     margin-left: 270px; }
     .navbar .navbar-brand .logo-1 {
-      width: 50px; }
+      width: 40px; }
     .navbar .navbar-brand .logo-2 {
-      width: 100px; } }
+      width: 90px; } }
 
 @media (min-width: 992px) {
   .navbar .navbar-nav {
-    margin-left: 15px; }
+    margin-left: 25px; }
   .navbar .navbar-brand {
     margin-left: 0px; }
     .navbar .navbar-brand .logo-1 {
-      width: 50px; }
+      width: 40px; }
     .navbar .navbar-brand .logo-2 {
-      width: 100px; }
+      width: 90px; }
   .navbar .profile-menu {
     position: absolute;
     right: 60px;
-    top: 15px; }
+    top: 5px; }
   .mobile-sidebar {
     display: none; } }
 
 @media (min-width: 1200px) {
   .navbar .navbar-nav {
-    margin-left: 30px; }
+    margin-left: 65px; }
   .navbar .navbar-brand {
     margin-left: 0px; }
     .navbar .navbar-brand .logo-1 {
-      width: 50px; }
+      width: 40px; }
     .navbar .navbar-brand .logo-2 {
-      width: 100px; }
+      width: 90px; }
   .navbar .profile-menu {
     position: absolute;
     right: 80px;
-    top: 15px; }
+    top: 5px; }
   .mobile-sidebar {
     display: none; } }
