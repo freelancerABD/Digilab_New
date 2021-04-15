@@ -1,4 +1,7 @@
 /* contact css*/
+body{
+	padding-top: 60px;
+}
 #page-header {
   background: url("../img/contact1.jpg");
   height: 250px;
