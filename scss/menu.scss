@@ -1,13 +1,12 @@
 body {	
   font-family: SF Pro Display;
   background: #050711;
-  line-height: none;
-  padding-top: 75px;
+  padding-top: 0px;
 }
 
 /* define custom css variables */
 :root{
-	--inner-shadow: inset 3px 3px 3px #381C6E, inset -3px -3px 3px #381C6E;
+	--inner-shadow: inset 2px 2px 2px #381C6E, inset -2px -2px 2px #381C6E;
 	--inner-shadow-0: inset 1px 1px 1px #4AF59B, inset -1px -1px 1px #4AF59B;
 }
 .inner-shadow{
@@ -19,6 +18,7 @@ body {
 
 /*======Mobile Sidebar Menu Css======*/
 .mobile-sidebar{
+margin-top: -25px;
 	a{
 		text-decoration: none;
 	}
@@ -35,7 +35,6 @@ body {
 		font-size: 20px;
 		color: white;
 		z-index: 1111;
-		position: fixed;
 	}
 	label #cancel{
 		left: -265px;
@@ -43,7 +42,6 @@ body {
 		font-size: 20px;
 		color: white;
 		z-index: 11111;
-		position: fixed;
 		transition: all .5s ease;
 	}
 	#check:checked ~ .sidebar{
@@ -96,14 +94,17 @@ body {
   background-color: #111527;
   .navbar-brand{
   	.logo-1{
-  		width: 50px;
+  		width: 40px;
   	}
   	.logo-2{
-  		width: 100px;
+  		width: 90px;
   	}
   }
   .navbar-nav{
-  	margin-left: 30px;
+  	margin-left: 65px;
+  	.nav-item{
+  		padding: 0px 15px;
+  	}
   	.nav-link{
   		color: #fff;
   		text-transform: uppercase;
@@ -112,12 +113,23 @@ body {
   	.nav-link:hover,.nav-link:focus {
     	color: #4AF59B;
 	}
+	.nav-item:hover,.nav-item:focus {
+    	border-bottom: 2px solid #6500FF;
+    	margin-bottom: -14px;
+	}
   }
-	
+
   .profile-menu{
   	position: absolute;
 	right: 80px;
-	top: 15px;
+	top: 5px;
+	.nav-item:hover,.nav-item:focus {
+    	border-bottom: 0px;
+    	margin-bottom: 0px;
+	}
+  }
+  .dropdown-menu{
+  	left:20px;
   }
   .dropdown-menu span{
   	position: absolute;
@@ -128,7 +140,7 @@ body {
   	z-index: -1;
   	transform: rotate(45deg);
   	top: -8px;
-	left: 17px;
+	left: 13px;
   }
 
 }
@@ -145,18 +157,25 @@ body {
 }
 
 @media(max-width: 991px){
-	body{
-		padding-top: 51px;
-	}
 	.navbar-nav{
 		display: none;
 	}
 }
 
-@media(max-width: 767px){
-	body{
-		padding-top: 41px;
+@media (min-width: 360px){
+	.navbar{
+		.navbar-brand{
+			margin-left: 110px;
+			.logo-1{
+		  		width: 40px;
+		  	}
+		  	.logo-2{
+		  		width: 80px;
+		  	}
+		}
 	}
+
+
 }
 
 @media (min-width: 375px){
@@ -177,7 +196,7 @@ body {
 @media (min-width: 576px){
 	.navbar{
 		.navbar-brand{
-			margin-left: 190px;
+			margin-left: 220px;
 			.logo-1{
 		  		width: 40px;
 		  	}
@@ -190,14 +209,14 @@ body {
 }
 
 @media (min-width: 768px) {
-.navbar{
+	.navbar{
 		.navbar-brand{
 			margin-left: 270px;
 			.logo-1{
-		  		width: 50px;
+		  		width: 40px;
 		  	}
 		  	.logo-2{
-		  		width: 100px;
+		  		width: 90px;
 		  	}
 		}
 	}
@@ -206,21 +225,21 @@ body {
 @media (min-width: 992px) {
 .navbar{
 	.navbar-nav{
-		margin-left: 15px;
+		margin-left: 25px;
 	}
 	.navbar-brand{
 		margin-left: 0px;
 		.logo-1{
-		  	width: 50px;
+		  	width: 40px;
 		}
 		.logo-2{
-		  	width: 100px;
+		  	width: 90px;
 		}
 	}
 	.profile-menu {
 	    position: absolute;
 	    right: 60px;
-	    top: 15px;
+	    top: 5px;
     }
 }
 	.mobile-sidebar{
@@ -231,21 +250,21 @@ body {
 @media (min-width: 1200px) {
 .navbar{
 	.navbar-nav{
-		margin-left: 30px;
+		margin-left: 65px;
 	}
 	.navbar-brand{
 		margin-left: 0px;
 		.logo-1{
-		  	width: 50px;
+		  	width: 40px;
 		}
 		.logo-2{
-		  	width: 100px;
+		  	width: 90px;
 		}
 	}
 	.profile-menu {
 	    position: absolute;
 	    right: 80px;
-	    top: 15px;
+	    top: 5px;
     }
 }
 	.mobile-sidebar{
